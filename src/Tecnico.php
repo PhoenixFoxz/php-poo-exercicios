@@ -8,9 +8,14 @@ class Tecnico extends Livro {
         $this->formato = $formato;
     } 
 
-    public function getFormato(): array
+    // public function getFormato(): array  Formato array
+    // {
+    //     return $this->formato;
+    // } 
+
+    public function getFormato(): string
     {
-        return $this->formato;
-    } 
+        return implode("," ,$this->formato);
+    }
 }
 ?>
