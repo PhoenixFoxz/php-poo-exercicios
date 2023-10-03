@@ -1,0 +1,8 @@
+{
+    "name" : "felipe/php-poo-exercicios",
+    "autoload": {
+        "psr-4" : {
+            "Jao\\" : "src/"
+        }
+    }
+}

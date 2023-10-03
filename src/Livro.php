@@ -1,4 +1,5 @@
 <?php 
+namespace Jao;
 abstract class Livro {
     private string $titulo;
     private string $autor;

@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 02 (corrigido)</title>
+    <title>Exercício 03</title>
 </head>
 
 <body>
-    <h1>Exercício 02 (corrigido)</h1>
+    <h1>Exercício 03</h1>
     <hr>
     <?php
+    use Jao\{Didatico, Tecnico, Programacao, Web};
+    require_once "vendor/autoload.php";
     // Livro Técnico
-    require_once "src/Tecnico.php";
     $livroTecnico = new Tecnico;
     $livroTecnico->setTitulo("Desenvolvimento de Sistemas");
     $livroTecnico->setAutor("Fulano de Tal");
@@ -28,7 +29,6 @@
 
     <?php
     // Livro Didático
-    require_once "src/Didatico.php";
     $livroDidatico = new Didatico;
     $livroDidatico->setTitulo("Literatura Moderna");
     $livroDidatico->setFormato(["digital", "fisico"]);
@@ -47,7 +47,6 @@
 
     <?php
     // Livro Programação
-    require_once "src/Programacao.php";
     $livroProgramacao = new Programacao;
     $livroProgramacao->setTitulo("PHP8");
     $livroProgramacao->setAutor("Beltrano");
@@ -59,6 +58,9 @@
     <p>Formato: <?= $livroProgramacao->getFormato() ?> </p>
     <p>Área: <?= $livroProgramacao->getArea() ?> </p>
 
+    <?php 
+    $web = new Web;
+    var_dump($web);
+    ?>
 </body>
-
 </html>

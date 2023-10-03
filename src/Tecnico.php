@@ -1,5 +1,5 @@
 <?php 
-require_once "Livro.php";
+namespace Jao;
 class Tecnico extends Livro {
     private array $formato = ["digital", "fisico"];
     
